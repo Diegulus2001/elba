@@ -1,0 +1,51 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    cursor: none;
+    display: flex;
+    flex-direction: column; /* Hace que el contenido se apile en columna */
+}
+
+main {
+    flex: 1; /* Hace que el main ocupe el espacio disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Footer fijo abajo */
+footer {
+    width: 100%;
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Evita que algún elemento cause overflow */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Ajustes en la barra de navegación */
+.navbar {
+    width: 100%;
+}
+
+/* Ajustes del cursor */
+.custom-cursor {
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 50%;
+    position: fixed; /* Fijamos el cursor en la pantalla */
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+    z-index: 9999; /* Para que siempre esté por encima */
+}

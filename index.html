@@ -1,20 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <title>Template Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elbaticao Rocks!!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Template Page</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Elbaticao</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center p-5 text-white bg-primary">
+        <h1>Bienvenido a mi Portfolio</h1>
+        <p>Explora mis proyectos y habilidades</p>
     </header>
-    <main>
-        <p>This is a template page.</p>
+
+    <!-- Main Content -->
+    <main class="container text-center my-5">
+        <p>Este es un espacio donde muestro mis proyectos y habilidades.</p>
     </main>
-    <footer>
-        <p>&copy; 2025 Elbaticao</p>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-3">
+        <p>&copy; 2025 Mi Nombre</p>
+        <p>
+            <a href="#" class="text-white mx-2">Twitter</a> |
+            <a href="#" class="text-white mx-2">LinkedIn</a> |
+            <a href="#" class="text-white mx-2">GitHub</a>
+        </p>
     </footer>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

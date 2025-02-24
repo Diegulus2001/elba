@@ -48,4 +48,12 @@ footer {
     transform: translate(-50%, -50%);
     transition: transform 0.1s ease-out;
     z-index: 9999; /* Para que siempre esté por encima */
+    display: none; /* Inicia oculto */
+}
+
+/* Mostrar el cursor solo en pantallas con un ancho mayor a 768px */
+@media (min-width: 768px) {
+    .custom-cursor {
+        display: block; /* Muestra el cursor solo en pantallas grandes */
+    }
 }

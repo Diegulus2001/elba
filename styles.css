@@ -9,6 +9,11 @@ html, body {
     flex-direction: column; /* Hace que el contenido se apile en columna */
 }
 
+/* Evitar que el cursor cambie al pasar sobre enlaces */
+a {
+    cursor: none; /* Desactiva el cursor de manita sobre los enlaces */
+}
+
 main {
     flex: 1; /* Hace que el main ocupe el espacio disponible */
     display: flex;

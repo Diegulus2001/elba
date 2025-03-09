@@ -1,52 +1,82 @@
 html, body {
-    width: 100%;
-    height: 100%;
+    font-family: Roboto, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
-    cursor: none;
     display: flex;
-    flex-direction: column; /* Hace que el contenido se apile en columna */
+    background-color: #ffefd1;
+    cursor: none;
 }
 
-/* Evitar que el cursor cambie al pasar sobre enlaces */
 a {
     cursor: none; /* Desactiva el cursor de manita sobre los enlaces */
 }
 
-main {
-    flex: 1; /* Hace que el main ocupe el espacio disponible */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-/* Footer fijo abajo */
-footer {
-    width: 100%;
-    background-color: #212529;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Evita que algún elemento cause overflow */
-* {
+#left-nav {
+    position: fixed;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    border-right: 1px solid #000;
+    background-color: #ffefd1;
+    color: #fff;
+    padding: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+    border-right: 1px solid transparent;
+    border-image: linear-gradient(to bottom, transparent 5%, black 40%, black 60%, transparent 95%);
+    border-image-slice: 1;
+}
+
+#left-nav img {
     max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
 }
 
-/* Ajustes en la barra de navegación */
-.navbar {
-    width: 100%;
+#left-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
 }
 
-/* Ajustes del cursor */
+#left-nav li {
+    margin-bottom: 15px;
+}
+
+#left-nav a {
+    color: #000000;
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+#left-nav a:hover {
+    color: #24d40d;
+}
+
+#main-content {
+    margin-left: 270px;
+    padding: 20px;
+    width: calc(100% - 270px);
+    transition: margin-left 0.3s ease;
+}
+
+/* * Ajustes del cursor */
 .custom-cursor {
     width: 12px;
     height: 12px;
     background-color: red;
+    /* TODO -> Cambiar el cursor a una imagen */
+    /* background-image: url('cursor.png');
+    background-size: cover; */
     border-radius: 50%;
     position: fixed; /* Fijamos el cursor en la pantalla */
     pointer-events: none;
@@ -56,9 +86,42 @@ footer {
     display: none; /* Inicia oculto */
 }
 
-/* Mostrar el cursor solo en pantallas con un ancho mayor a 768px */
 @media (min-width: 768px) {
     .custom-cursor {
         display: block; /* Muestra el cursor solo en pantallas grandes */
     }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #left-nav {
+        transform: translateX(-100%);
+        background-color: #000000;
+    }
+
+    #left-nav a {
+        color: #ffefd1;
+    }
+    
+    #main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    #left-nav.active {
+        transform: translateX(0);
+    }
+    
+    #menu-toggle {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
 }

@@ -1,12 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const cursor = document.querySelector(".custom-cursor");
+$(document).ready(function() {
+    $("#menu-toggle").click(function() {
+        $("#left-nav").toggleClass("active");
+    });
+});
 
-    document.addEventListener("mousemove", (e) => {
-        cursor.style.left = `${e.clientX}px`;
-        cursor.style.top = `${e.clientY}px`;
-        cursor.style.transform = "translate(-50%, -50%) scale(1.2)";
-        setTimeout(() => {
-            cursor.style.transform = "translate(-50%, -50%) scale(1)";
-        }, 50);
+$(document).on("mousemove", function(e) {
+    $(".custom-cursor").css({
+        left: e.clientX + "px",
+        top: e.clientY + "px",
+        transform: "translate(-50%, -50%) scale(1.2)"
+    }).delay(50).queue(function(next) {
+        $(this).css("transform", "translate(-50%, -50%) scale(1)");
+        next();
     });
 });

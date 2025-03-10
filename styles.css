@@ -72,13 +72,10 @@ a {
 
 /* * Ajustes del cursor */
 .custom-cursor {
-    width: 12px;
-    height: 12px;
-    background-color: red;
-    /* TODO -> Cambiar el cursor a una imagen */
-    /* background-image: url('cursor.png');
-    background-size: cover; */
-    border-radius: 50%;
+    width: 20.3px;
+    height: 28px;
+    background-image: url('cursor.png');
+    background-size: cover;
     position: fixed; /* Fijamos el cursor en la pantalla */
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -104,6 +101,7 @@ a {
         color: #ffefd1;
     }
 
+    /* TODO */
     #nav-footer a {
         color: #ffefd1 !important;
         font-size: 25px;

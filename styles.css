@@ -30,6 +30,7 @@ a {
     border-right: 1px solid transparent;
     border-image: linear-gradient(to bottom, transparent 5%, black 40%, black 60%, transparent 95%);
     border-image-slice: 1;
+    min-height: 100vh;
 }
 
 #left-nav img {
@@ -103,16 +104,9 @@ a {
         color: #ffefd1;
     }
 
-    #nav-footer {
-        text-align: center;
-        padding: 10px;
-        background-color: #000; /* Ajusta según el diseño */
-    }
-    
     #nav-footer a {
-        color: #ffefd1 !important; /* Asegura visibilidad en fondo oscuro */
-        font-size: 20px;
-        display: block;
+        color: #ffefd1 !important;
+        font-size: 25px; /* Asegurar que sea legible */
     }
 
     #main-content {

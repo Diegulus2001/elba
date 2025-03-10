@@ -106,7 +106,9 @@ a {
 
     #nav-footer a {
         color: #ffefd1 !important;
-        font-size: 25px; /* Asegurar que sea legible */
+        font-size: 25px;
+        position: relative;
+        z-index: 1000;
     }
 
     #main-content {

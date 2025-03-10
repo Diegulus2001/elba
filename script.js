@@ -1,7 +1,5 @@
-$(document).ready(function() {
-    $("#menu-toggle").click(function() {
-        $("#left-nav").toggleClass("active");
-    });
+$(document).on("touchstart", "#menu-toggle", function() {
+    $("#left-nav").toggleClass("active");
 });
 
 $(document).on("mousemove", function(e) {

@@ -102,16 +102,16 @@ a {
     #left-nav a {
         color: #ffefd1;
     }
-    
+
     #main-content {
         margin-left: 0;
         width: 100%;
     }
-    
+
     #left-nav.active {
         transform: translateX(0);
     }
-    
+
     #menu-toggle {
         position: fixed;
         top: 20px;

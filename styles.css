@@ -103,6 +103,18 @@ a {
         color: #ffefd1;
     }
 
+    #nav-footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #000; /* Ajusta según el diseño */
+    }
+    
+    #nav-footer a {
+        color: #ffefd1 !important; /* Asegura visibilidad en fondo oscuro */
+        font-size: 20px;
+        display: block;
+    }
+
     #main-content {
         margin-left: 0;
         width: 100%;

@@ -7,8 +7,14 @@ html, body {
     cursor: none;
 }
 
+/* TODO -> El cursor en mozila no siempre se esconde, debe haber un espacio que no es html */
+
 a {
-    cursor: none; /* Desactiva el cursor de manita sobre los enlaces */
+    cursor: none;
+}
+
+.d-none {
+    display: none;
 }
 
 #left-nav {
@@ -74,19 +80,19 @@ a {
 .custom-cursor {
     width: 20.3px;
     height: 28px;
-    background-image: url('cursor.png');
+    background-image: url('images/cursor.png');
     background-size: cover;
-    position: fixed; /* Fijamos el cursor en la pantalla */
+    position: fixed;
     pointer-events: none;
     transform: translate(-50%, -50%);
     transition: transform 0.1s ease-out;
-    z-index: 9999; /* Para que siempre esté por encima */
-    display: none; /* Inicia oculto */
+    z-index: 9999;
+    display: none;
 }
 
 @media (min-width: 768px) {
     .custom-cursor {
-        display: block; /* Muestra el cursor solo en pantallas grandes */
+        display: block;
     }
 }
 
@@ -99,14 +105,6 @@ a {
 
     #left-nav a {
         color: #ffefd1;
-    }
-
-    /* TODO */
-    #nav-footer a {
-        color: #ffefd1 !important;
-        font-size: 25px;
-        position: relative;
-        z-index: 1000;
     }
 
     #main-content {

@@ -6,28 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elbaticao rules!!</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </head>
 
 <body>
     <button id="menu-toggle">☰</button>
     <nav id="left-nav">
-        <img src="logo.png" alt="No image">
+        <img src="images/logo.png" alt="No image">
+        <img id="lang-toggle" src="images/gb.svg" alt="Cambiar idioma" style="width: 24px;" />
         <ul>
-            <li><a href="#">sobre mí</a></li>
-            <li><a href="#">proyectos</a></li>
+            <li><a id="about-trans" href="#" data-target="about"></a></li>
             <!-- TODO -> Los proyectos deben tener menos espacio entre ellos -->
+            <li><a id="projects-trans" href="#" data-target="projects"></a></li>
+            <li><a id="contact-trans" href="#" data-target="contact"></a></li>
         </ul>
-        <!-- TODO -> Este elemento en movil no se ve (MIRAR MOVIL REAL, NO RESPONSIVE EN PC) -->
-        <div id="nav-footer">
-            <a href="#">contacto</a>
-        </div>
     </nav>
     <div id="main-content">
-        <h1>bienvenido a mi página</h1>
-        <p>este es el contenido de la página.</p>
+        <div id="about" class="content-section">
+            <h1 id="welcome-trans"></h1>
+            <p id="welcome-content-trans"></p>
+        </div>
+        <div id="projects" class="content-section" style="display: none;">
+            <h1 id="projects-trans"></h1>
+            <p id="projects-content-trans"></p>
+        </div>
+        <div id="contact" class="content-section" style="display: none;">
+            <h1 id="contact-trans"></h1>
+            <p id="contact-content-trans"></p>
+        </div>
     </div>
     <!-- * Custom Cursor -->
     <div class="custom-cursor"></div>

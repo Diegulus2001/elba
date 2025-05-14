@@ -33,9 +33,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease;
-    border-right: 1px solid transparent;
-    border-image: linear-gradient(to bottom, transparent 5%, black 40%, black 60%, transparent 95%);
-    border-image-slice: 1;
     min-height: 100vh;
 }
 

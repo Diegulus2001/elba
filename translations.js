@@ -7,6 +7,7 @@ const translations = {
         "projects-content-trans": "este es el contenido de la página 2.",
         "contact-trans": "contacto",
         "contact-content-trans": "este es el contenido de la página 3.",
+        "lang-toggle-trans": "en",
     },
     en: {
         "about-trans": "about me",
@@ -16,5 +17,6 @@ const translations = {
         "projects-content-trans": "this is the content of the page 2.",
         "contact-trans": "contact",
         "contact-content-trans": "this is the content of the page 3.",
+        "lang-toggle-trans": "es",
     }
 };

@@ -23,7 +23,7 @@ $(document).ready(function () {
     });
 });
 
-$(document).on("click", "#lang-toggle", function () {
+$(document).on("click", "#lang-toggle-trans", function () {
     const currentLang = $("html").attr("lang");
     const newLang = currentLang === "es" ? "en" : "es";
     $("html").attr("lang", newLang);
@@ -33,10 +33,6 @@ $(document).on("click", "#lang-toggle", function () {
         const id = $(this).attr("id");
         $(this).text(translations[newLang][id]);
     });
-
-    // Update lang flag
-    const flagSrc = newLang === "es" ? "images/gb.svg" : "images/es.svg";
-    $("#lang-toggle").attr("src", flagSrc);
 });
 
 // * Nav Menu

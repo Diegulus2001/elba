@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     font-family: Roboto, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,6 +16,27 @@ a {
 
 .d-none {
     display: none;
+}
+
+#lang-toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+#lang-toggle-trans {
+    width: auto !important;
+    /* Override inline width */
+    color: rgb(255, 0, 0);
+    font-size: 1em;
+    text-decoration: underline;
+    padding: 5px;
+    /* Add some padding for better touch/click area */
+    background-color: transparent;
+    /* Make background transparent */
+    border: none;
+    /* Remove default button border */
 }
 
 #left-nav {
@@ -107,6 +129,9 @@ a {
     #main-content {
         margin-left: 0;
         width: 100%;
+        /* Add padding-top to push content below the fixed elements */
+        padding-top: 60px; /* Adjust this value based on the height of your fixed elements */
+        box-sizing: border-box; /* Include padding in the element's total width and height */
     }
 
     #left-nav.active {
@@ -124,5 +149,4 @@ a {
         cursor: pointer;
         z-index: 1000;
     }
-
 }

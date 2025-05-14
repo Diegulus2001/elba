@@ -1,5 +1,38 @@
-$(document).on("touchstart", "#menu-toggle", function () {
-    $("#left-nav").toggleClass("active");
+$(document).ready(function () {
+    const menuToggle = $("#menu-toggle");
+    const leftNav = $("#left-nav");
+    const navLinks = $("#left-nav a");
+    const mainContent = $("#main-content");
+
+    // Toggle menu on button click
+    menuToggle.on("click", function (e) {
+        e.stopPropagation(); // Prevent click on button from immediately closing the menu
+        leftNav.toggleClass("active");
+    });
+
+    // Close menu when a nav link is clicked
+    navLinks.on("click", function () {
+        leftNav.removeClass("active");
+    });
+
+    // Close menu when clicking outside the menu on mobile
+    $(document).on("click touchstart", function (e) {
+        if (leftNav.hasClass("active") && !$(e.target).closest("#left-nav").length && !$(e.target).is(menuToggle)) {
+            leftNav.removeClass("active");
+        }
+    });
+
+    // Prevent clicks inside the menu from closing it immediately
+    leftNav.on("click touchstart", function (e) {
+        e.stopPropagation();
+    });
+
+    $("nav a").click(function (e) {
+        e.preventDefault();
+        var target = $(this).data("target");
+        $(".content-section").hide();
+        $("#" + target).show();
+    });
 });
 
 // * Custom Cursor
@@ -32,22 +65,5 @@ $(document).on("click", "#lang-toggle-trans", function () {
     $("[id$='-trans']").each(function () {
         const id = $(this).attr("id");
         $(this).text(translations[newLang][id]);
-    });
-});
-
-// * Nav Menu
-$(document).ready(function () {
-    // Mostrar la sección correspondiente al enlace clickeado
-    $("nav a").click(function (e) {
-        e.preventDefault(); // Prevenir el comportamiento por defecto del enlace
-
-        // Obtener el valor del atributo data-target
-        var target = $(this).data("target");
-
-        // Ocultar todas las secciones
-        $(".content-section").hide();
-
-        // Mostrar la sección correspondiente
-        $("#" + target).show();
     });
 });

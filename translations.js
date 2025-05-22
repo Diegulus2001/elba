@@ -8,6 +8,12 @@ const translations = {
         "contact-trans": "contacto",
         "contact-content-trans": "este es el contenido de la página 3.",
         "lang-toggle-trans": "en",
+        "project1-title-trans": "Proyecto Uno",
+        "project1-content-trans": "Esta es una breve descripción del proyecto número uno. Puedes añadir más detalles aquí sobre las tecnologías utilizadas, los objetivos del proyecto y cualquier aspecto interesante.",
+        "project2-title-trans": "Proyecto Dos",
+        "project2-content-trans": "Aquí tienes una descripción para el segundo proyecto. Siéntete libre de detallar los desafíos enfrentados y las soluciones implementadas.",
+        "project3-title-trans": "Proyecto Tres",
+        "project3-content-trans": "Descripción para el proyecto número tres con múltiples imágenes. Puedes incluir varios formatos y mostrar diferentes aspectos del proyecto.",
     },
     en: {
         "about-trans": "about me",
@@ -18,5 +24,11 @@ const translations = {
         "contact-trans": "contact",
         "contact-content-trans": "this is the content of the page 3.",
         "lang-toggle-trans": "es",
+        "project1-title-trans": "Project One",
+        "project1-content-trans": "This is a brief description of project number one. You can add more details here about the technologies used, the goals of the project, and any interesting aspects.",
+        "project2-title-trans": "Project Two",
+        "project2-content-trans": "Here's a description for the second project. Feel free to elaborate on the challenges faced and the solutions implemented.",
+        "project3-title-trans": "Project Three",
+        "project3-content-trans": "Description for project number three with multiple images. You can include various formats and showcase different aspects of the project.",
     }
 };

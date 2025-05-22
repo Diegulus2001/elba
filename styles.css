@@ -1,10 +1,10 @@
 html,
 body {
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: 'Montserrat';
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: #ffefd1;
+    background-color: #eae4d3;
     cursor: none;
 }
 
@@ -18,6 +18,16 @@ a {
     display: none;
 }
 
+.bg-color-red {
+    background-color: #fe3e00;
+}
+.bg-color-orange {
+    background-color: #ff7f00;
+}
+.bg-color-blue {
+    background-color: #008583;
+}
+
 #lang-toggle-container {
     position: fixed;
     top: 20px;
@@ -28,7 +38,7 @@ a {
 #lang-toggle-trans {
     width: auto !important;
     /* Override inline width */
-    color: rgb(255, 0, 0);
+    color: #000000;
     font-size: 1em;
     text-decoration: underline;
     padding: 5px;
@@ -47,7 +57,7 @@ a {
     width: 250px;
     height: 100vh;
     border-right: 1px solid #000;
-    background-color: #ffefd1;
+    background-color: #eae4d3;
     color: #fff;
     padding: 20px;
     box-sizing: border-box;
@@ -85,7 +95,7 @@ a {
 }
 
 #left-nav a:hover {
-    color: #24d40d;
+    color: #fe3e00;
 }
 
 #main-content {
@@ -124,8 +134,9 @@ a {
 .project-images-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 10px;
+    gap: 2px;
+    /* TODO -> When descriptions get to fill all the width, delete this bottom margin */
+    margin-bottom: 2px;
 }
 
 .project-images-container img {
@@ -133,19 +144,19 @@ a {
     max-width: 100%;
     height: auto;
     max-height: 300px;
-    /* flex-grow: 1; */
     object-fit: cover;
 }
 
 .project-description {
-    color: #333;
+    color: #000000;
+    padding-left: 12px;
+    padding-top: 12px;
 }
 
 .project-description h2 {
     font-size: 1.5em;
     margin-top: 0;
     margin-bottom: 5px;
-    color: #007bff;
 }
 
 .project-description p {
@@ -155,6 +166,11 @@ a {
 @media (min-width: 768px) {
     .custom-cursor {
         display: block;
+    }
+
+    .content-section-about{
+        max-width: 52%;
+        margin-left: 60px;
     }
 }
 
@@ -166,7 +182,7 @@ a {
     }
 
     #left-nav a {
-        color: #ffefd1;
+        color: #eae4d3;
     }
 
     #main-content {
@@ -186,8 +202,9 @@ a {
         position: fixed;
         top: 20px;
         left: 20px;
-        background: #333;
-        color: #fff;
+        background: none;
+        color: #000000;
+        font-weight: bolder;
         border: none;
         padding: 10px 15px;
         cursor: pointer;

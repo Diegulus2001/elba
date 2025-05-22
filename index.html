@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elbaticao rules!!</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/logo2.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="translations.js"></script>
     <script src="script.js"></script>
@@ -15,75 +16,48 @@
 <body>
     <button id="menu-toggle">☰</button>
     <nav id="left-nav">
-        <img src="images/logo.png" alt="No image">
+        <img src="images/logo2.png" alt="No image">
         <ul>
             <li><a id="about-trans" href="#" data-target="about"></a></li>
             <!-- TODO -> Los proyectos deben tener menos espacio entre ellos -->
             <li><a id="projects-trans" href="#" data-target="projects"></a></li>
-            <li><a id="contact-trans" href="#" data-target="contact"></a></li>
         </ul>
     </nav>
     <div id="main-content">
         <div id="lang-toggle-container">
             <h1 id="lang-toggle-trans"></h1>
         </div>
-        <div id="about" class="content-section">
+        <div id="about" class="content-section content-section-about">
             <h1 id="welcome-trans"></h1>
-            <p id="welcome-content-trans"></p>
+            <p id="welcome-content-1-trans"></p>
+            <p id="welcome-content-2-trans"></p>
+            <p id="welcome-content-3-trans"></p>
+            <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+                <a href="https://www.linkedin.com/in/elba-glez/" target="_blank" style="display: inline-block; width: 30px; height: 30px;">
+                    <img src="images/linkedin.svg" alt="">
+                </a>
+                |
+                <a href="mailto:elbagg02@gmail.com" style="color: #000000;">elbagg02@gmail.com</a>
+            </div>
         </div>
         <div id="projects" class="content-section" style="display: none;">
             <!-- TODO -> Los textos deben tener un BGColor y que ocupe todo el ancho de la seccion -->
-            <!-- TODO -> Es posible que los estilos de las imagenes deban tomarse de forma individual segun el caso -->
             <h1 id="projects-trans"></h1>
             <div class="project-item">
                 <div class="project-images-container">
                     <img src="images/projects/mockup_vinilo.ethelcain_A.png" alt="Project 1 Image 1">
+                    <img src="images/projects/mokcup_viniloabierto.png" alt="Project 1 Image 6">
                     <img src="images/projects/mockup_vinilo.ethelcain_B.png" alt="Project 1 Image 2">
-                    <img src="images/projects/mockup_vinilo.ethelcain_D.png" alt="Project 1 Image 2">
-                    <img src="images/projects/mockup_vinyl.png" alt="Project 1 Image 2">
-                    <img src="images/projects/mockup_vinyl_mejorado.png" alt="Project 1 Image 2">
+                    <img src="images/projects/GLUELP02_C_v6.2.png" alt="Project 1 Image 7">
+                    <img src="images/projects/mockup_vinilo.ethelcain_D.png" alt="Project 1 Image 3">
+                    <img src="images/projects/mockup_vinyl_mejorado.png" alt="Project 1 Image 5">
                 </div>
-                <div class="project-description">
+                <div class="project-description bg-color-red">
                     <h2 id="project1-title-trans"></h2>
-                    <p id="project1-content-trans"></p>
+                    <p id="project1-content-1-trans"></p>
+                    <p id="project1-content-2-trans"></p>
                 </div>
             </div>
-
-            <div class="project-item">
-                <div class="project-images-container">
-                    <img src="images/logo.png" alt="Project 2 Image">
-                </div>
-                <div class="project-description">
-                    <h2 id="project2-title-trans"></h2>
-                    <p id="project2-content-trans"></p>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-images-container">
-                    <img src="images/logo.png" alt="Project 3 Image 1">
-                    <img src="images/logo.png" alt="Project 3 Image 2">
-                    <img src="images/logo.png" alt="Project 3 Image 3">
-                    <img src="images/logo.png" alt="Project 3 Image 4">
-                    <img src="images/logo.png" alt="Project 3 Image 4">
-                    <img src="images/logo.png" alt="Project 3 Image 4">
-                    <img src="images/logo.png" alt="Project 3 Image 4">
-                    <img src="images/logo.png" alt="Project 3 Image 4">
-                    <img src="images/logo.png" alt="Project 3 Image 4">
-                    <img src="images/logo.png" alt="Project 3 Image 4">
-                    <img src="images/logo.png" alt="Project 3 Image 4">
-                    <img src="images/logo.png" alt="Project 3 Image 4">
-                    <img src="images/logo.png" alt="Project 3 Image 4">
-                </div>
-                <div class="project-description">
-                    <h2 id="project3-title-trans"></h2>
-                    <p id="project3-content-trans"></p>
-                </div>
-            </div>
-        </div>
-        <div id="contact" class="content-section" style="display: none;">
-            <h1 id="contact-trans"></h1>
-            <p id="contact-content-trans"></p>
         </div>
     </div>
     <!-- * Custom Cursor -->

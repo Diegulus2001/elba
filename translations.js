@@ -1,8 +1,8 @@
 const translations = {
     es: {
         "about-trans": "sobre mí",
-        "welcome-trans": "bienvenido a mi página",
-        "welcome-content-1-trans": "hola!! soy Elba, una diseñadora gráfica recién graduada, entusiasta de las últimas tendencias en diseño y la relación entre arte y tecnología. me gusta trabajar en equipo y mi objetivo es desarrollarme profesionalmente en el sector, aportando una visión fresca y actual. además, estoy formándome en motion graphics para poder llevar a otro nivel mis diseños. vivo en Madrid, aunque soy asturiana.",
+        "welcome-trans": "hola!",
+        "welcome-content-1-trans": "soy Elba, una diseñadora gráfica recién graduada, entusiasta de las últimas tendencias en diseño y la relación entre arte y tecnología. me gusta trabajar en equipo y mi objetivo es desarrollarme profesionalmente en el sector, aportando una visión fresca y actual. además, estoy formándome en motion graphics para poder llevar a otro nivel mis diseños. vivo en Madrid, aunque soy asturiana.",
         "welcome-content-2-trans": "esta página es una muestra de mi trabajo, si te ha gustado no dudes en contactar conmigo via mail o linkedin",
         "welcome-content-3-trans": "gracias por pasar por aquí!",
         "projects-trans": "proyectos",
@@ -14,8 +14,8 @@ const translations = {
     },
     en: {
         "about-trans": "about me",
-        "welcome-trans": "welcome to my page",
-        "welcome-content-1-trans": "hello!! i’m Elba, a graphic designer recently graduated, enthusiastic about the latest trends in design and the relationship between art and technology. i like to work as a team and my goal is to develop professionally in the area, providing a fresh and current vision. in addition, i’m learning motion graphics in order to take my designs to another level. i live in Madrid, although i’m from Asturias.",
+        "welcome-trans": "hello!",
+        "welcome-content-1-trans": "i’m Elba, a graphic designer recently graduated, enthusiastic about the latest trends in design and the relationship between art and technology. i like to work as a team and my goal is to develop professionally in the area, providing a fresh and current vision. in addition, i’m learning motion graphics in order to take my designs to another level. i live in Madrid, although i’m from Asturias.",
         "welcome-content-2-trans": "this page is a sample of my work, if you liked it do not hesitate to contact me via email or linkedin",
         "welcome-content-3-trans": "thanks for stopping by!",
         "projects-trans": "projects",

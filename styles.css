@@ -51,7 +51,7 @@ a {
 
 #left-nav {
     position: fixed;
-    font-weight: bold;
+    font-weight: 800;
     top: 0;
     left: 0;
     width: 250px;
@@ -127,6 +127,10 @@ a {
     gap: 20px;
 }
 
+#welcome-trans {
+    font-weight: 800;
+}
+
 .about-text-content {
     flex: 1;
 }
@@ -151,6 +155,10 @@ a {
 #projects {
     display: none;
     padding: 20px;
+}
+
+#projects-trans {
+    font-weight: 800;
 }
 
 .project-item {

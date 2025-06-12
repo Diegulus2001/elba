@@ -28,6 +28,13 @@ a {
     background-color: #008583;
 }
 
+.max-height-430 {
+    max-height: 430px !important;
+}
+.max-height-435 {
+    max-height: 435px !important;
+}
+
 #lang-toggle-container {
     position: fixed;
     top: 20px;

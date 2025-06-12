@@ -11,6 +11,11 @@ const translations = {
         "project1-title-trans": "Rediseño de Preacher's Daughter",
         "project1-content-1-trans": "Rediseño del álbum Preacher's Daughter de Ethel Cain. El disco explora temas delicados y oscuros y se clasifica dentro de los géneros indie y rock alternativo.",
         "project1-content-2-trans": 'Se trata de un edición de un vinilo de 12" compuesto por una funda exterior troquelada y con golpe en seco, el sobre tradicional que se abre, el “insert” de un color sólido que protege el vinilo y la galleta o pegatina que identifica el disco por las dos caras (A y B).',
+        "project2-title-trans": "Branding para CAFETA",
+        "project2-content-1-trans": "Branding y concepto para una cafetería de especialidad llamada CAFETA. Con tres colores principales y uno de ellos sirviendo como fondo cuando corresponde, esta identidad visual plantea una perspectiva más divertida y amable dentro de este tipo de establecimientos de un estilo urbano e industrial.",
+        "project2-content-2-trans": 'Esto se consigue con unas pintorescas figuras que toman el papel de mascotas de la marca y acompañan al logo, para el que sí se utiliza una tipografía grotesque, típica de este tipo de cafeterías.',
+        "project3-title-trans": 'Diseño y concepto del fanzine "Memorándum de bolsillo"',
+        "project3-content-1-trans": "Se trata de un proyecto personal que explora nuestros propios recuerdos y cómo nos relacionamos con ellos en forma de fanzine de 8 páginas que se desdobla en un póster A3. Es una publicación conceptual, que en ocasiones recurre al humor para reflejar ciertas ideas y que apela a la generación Z, aunque los temas que trata sean universales.",
     },
     en: {
         "about-trans": "about me",
@@ -24,5 +29,10 @@ const translations = {
         "project1-title-trans": "Preacher's Daughter redesign",
         "project1-content-1-trans": "Redesign of the album Preacher’s Daughter by Ethel Cain. The album explores delicate and dark themes and is classified within indie and alternative rock genres.",
         "project1-content-2-trans": 'This is an edition of a classic 12" vinyl consisting of a die-cut outer sleeve, the traditional opening envelope, the solid colour "insert" protecting the vinyl and the cookie or sticker identifying the disc on both sides (A and B).',
+        "project2-title-trans": "Branding for CAFETA",
+        "project2-content-1-trans": "Branding and concept for a specialty cafe called CAFETA. With three main colors and one serving as a background when appropriate, this visual identity raises a more fun and friendly perspective within this type of establishments of an urban and industrial style.",
+        "project2-content-2-trans": 'This is achieved with some picturesque figures that take the role of mascots of the brand and accompany the logo, for which a grotesque typography is used, typical of this type of cafes.',
+        "project3-title-trans": 'Design and concept of the fanzine "Memorándum de bolsillo"',
+        "project3-content-1-trans": "This is a personal project that explores our own memories and how we relate to them in the form of an 8-page fanzine that unfolds into an A3 poster. It is a conceptual publication, which sometimes uses humor to reflect certain ideas and appeals to Generation Z, even though the topics it deals with are universal.",
     }
 };

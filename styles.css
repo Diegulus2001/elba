@@ -225,6 +225,10 @@ a {
     .about-text-content {
         max-width: 40%;
     }
+
+    #mobile_logo {
+        display: none !important;
+    }
 }
 
 /* Responsive */
@@ -232,6 +236,14 @@ a {
     #left-nav {
         transform: translateX(-100%);
         background-color: #000000;
+    }
+
+    #mobile_logo {
+        display: block;
+    }
+
+    #desktop_logo {
+        display: none !important;
     }
 
     #left-nav a {
